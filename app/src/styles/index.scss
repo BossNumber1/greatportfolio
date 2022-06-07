@@ -12,11 +12,12 @@ code {
         monospace;
 }
 
+// custom styles
 .main {
     border: 1px solid;
 }
 
-/* main__row styles */
+// main__row styles
 .main__row {
     border: 1px solid orange;
     display: flex;
@@ -28,6 +29,7 @@ code {
     margin-bottom: 1px;
 }
 
+// main__column styles
 .main__column {
     border: 1px solid red;
 }
