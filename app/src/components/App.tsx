@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/App.css';
+import Card from './Card';
 
 function App() {
   return (
@@ -9,21 +10,19 @@ function App() {
       </div>
       <div className="main">
         <div className="main__row">
-          <div className="main__column">
-            1й столбец
-          </div>
-          <div className="main__column">
-            2й столбец
-          </div>
-          <div className="main__column">
-            3й столбец
-          </div>
+          <Card name="1я карточка" />
+          <Card name="2я карточка" />
+          <Card name="3я карточка" />
         </div>
         <div className="main__row">
-          2й ряд
+          <Card name="4я карточка" />
+          <Card name="5я карточка" />
+          <Card name="6я карточка" />
         </div>
         <div className="main__row">
-          3й ряд
+          <Card name="7я карточка" />
+          <Card name="8я карточка" />
+          <Card name="9я карточка" />
         </div>
       </div>
       <div className="footer">
