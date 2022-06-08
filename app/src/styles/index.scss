@@ -13,23 +13,46 @@ code {
 }
 
 // custom styles
+
+.app {
+    display: grid;
+    grid-template-areas: 
+        "headerArea" 
+        "mainArea" 
+        "footerArea";
+    grid-template-rows: 20% 100% 20%;
+    grid-gap: 1em;
+    text-align: center;
+}
+
+.header {
+    grid-area: headerArea;
+}
+
 .main {
-    border: 1px solid;
+    grid-area: mainArea;
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__row:not(:last-child) {
+            margin-bottom: 1px;
+        }
+    }
+
+    &__column {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        margin-right: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
-// main__row styles
-.main__row {
-    border: 1px solid orange;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.main__row:not(:last-child) {
-    margin-bottom: 1px;
-}
-
-// main__column styles
-.main__column {
-    border: 1px solid red;
+.footer {
+    grid-area: footerArea;
 }
