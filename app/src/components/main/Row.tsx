@@ -1,11 +1,19 @@
 import Card from './Card';
 
-function Row() {
+type PropTypes = {
+    content: Array<string>;
+}
+
+function Row(props: PropTypes) {
     return (
         <div className="main__row">
-            <Card name="1я карточка" />
-            <Card />
-            <Card />
+            {
+                props.content.map((name, index) => {
+                    return (
+                        <Card key={index} name={name} />
+                    )
+                })
+            }
         </div>
     );
 }
