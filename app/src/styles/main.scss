@@ -28,12 +28,16 @@
         text-align: center;
     }
 
-    &__column {
+    &__column div {
         font-size: 16px;
     }
 
-    &__descriptionColumn {
+    &__descriptionColumn div {
         font-size: 12px;
+    }
+
+    &__descriptionColumn a {
+        font-size: 10px;
     }
 
     &__emptyColumn {

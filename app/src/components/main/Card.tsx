@@ -17,9 +17,13 @@ function Card(props: PropTypes) {
             {
                 props.name ? 
                     upsideDown ? 
-                        <div className="main__descriptionColumn" onClick={turnOver}>
-                            <div>{"Находит сочетание цветов"}</div>
-                        </div> : <div className="main__column" onClick={turnOver}>
+                        <div className="main__descriptionColumn" onClick={turnOver} >
+                            <div>
+                                {"Находит сочетание цветов"}
+                                <br />
+                                <a href="https://vk.com/">Перейти</a>
+                            </div>
+                        </div> : <div className="main__column" onClick={turnOver} >
                             <div>{props.name}</div>
                         </div>
                 : 
