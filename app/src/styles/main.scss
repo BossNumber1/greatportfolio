@@ -8,25 +8,21 @@
         margin-bottom: 2px;
     }
 
-    &__column {
+    &__column, &__emptyColumn {
         @include centeringFlex;
-        
-        border: 1px solid green;
+
         width: 100px;
         height: 100px;
         margin-right: 2px;
+        border-radius: 10px;
+    }
 
+    &__column {
+        border: 1px solid green;
         cursor: pointer;
     }
 
     &__emptyColumn {
-        @include centeringFlex;
-        
-        border: 1px solid red;
-        width: 100px;
-        height: 100px;
-        margin-right: 2px;
-        
-        cursor: pointer;
+        background-color: rgb(201, 199, 199);
     }
 }
