@@ -3,15 +3,18 @@ import Row from './Row';
 const dataCards = [
         {
             namesCards: ["Бот", "", ""],
-            descriptionsCards: ["Находит сочетание цветов", "", ""]
+            descriptionsCards: ["Находит сочетание цветов", "", ""],
+            linksToProjects: ["https://vk.com/", "", ""]
         },
         {
             namesCards: ["", "", ""], 
-            descriptionsCards: ["", "", ""]
+            descriptionsCards: ["", "", ""],
+            linksToProjects: ["", "", ""]
         },
         {
             namesCards: ["", "", ""], 
-            descriptionsCards: ["", "", ""]
+            descriptionsCards: ["", "", ""],
+            linksToProjects: ["", "", ""]
         }
     ]
 
@@ -21,7 +24,12 @@ function Main() {
             {
                 dataCards.map((dataRow, index) => {
                     return (
-                        <Row key={index} namesCards={dataRow.namesCards} descriptionsCards={dataRow.descriptionsCards} />
+                        <Row 
+                            key={index} 
+                            namesCards={dataRow.namesCards} 
+                            descriptionsCards={dataRow.descriptionsCards} 
+                            linksToProjects={dataRow.linksToProjects} 
+                        />
                     )
                 })
             }

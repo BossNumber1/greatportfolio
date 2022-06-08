@@ -6,6 +6,7 @@ import EmptyCard from "./EmptyCard";
 type PropTypes = {
     name?: string;
     description?: string;
+    link?: string;
 }
 
 function Card(props: PropTypes) {
@@ -22,7 +23,7 @@ function Card(props: PropTypes) {
             {
                 props.name ? 
                     upsideDown 
-                        ? <DescriptionCard turnOver={turnOver} description={props.description} /> 
+                        ? <DescriptionCard turnOver={turnOver} description={props.description} link={props.link} /> 
                         : <DefaultCard turnOver={turnOver} name={props.name} />
                 : <EmptyCard />
             }

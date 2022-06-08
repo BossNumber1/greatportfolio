@@ -1,6 +1,7 @@
 type PropTypes = {
     description?: string;
     turnOver: () => void;
+    link?: string;
 }
 
 function DescriptionCard(props: PropTypes) {
@@ -9,7 +10,7 @@ function DescriptionCard(props: PropTypes) {
             <div>
                 {props.description}
                 <br />
-                <a href="https://vk.com/">Перейти</a>
+                <a href={props.link}>Перейти</a>
             </div>
         </div>
     );

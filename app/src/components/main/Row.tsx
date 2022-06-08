@@ -3,6 +3,7 @@ import Card from './Card';
 type PropTypes = {
     namesCards: Array<string>;
     descriptionsCards: Array<string>;
+    linksToProjects: Array<string>;
 }
 
 function Row(props: PropTypes) {
@@ -11,7 +12,12 @@ function Row(props: PropTypes) {
             {
                 props.namesCards.map((name, index) => {
                     return (
-                        <Card key={index} name={name} description={props.descriptionsCards[index]} />
+                        <Card 
+                            key={index} 
+                            name={name} 
+                            description={props.descriptionsCards[index]} 
+                            link={props.linksToProjects[index]}
+                        />
                     )
                 })
             }
