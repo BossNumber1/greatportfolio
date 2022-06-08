@@ -1,6 +1,7 @@
 import vkIcon from '../../pictures/vkIcon.svg'
 import tgIcon from '../../pictures/tgIcon.svg'
 import gmailIcon from '../../pictures/gmailIcon.svg'
+import githubIcon from '../../pictures/githubIcon.svg'
 
 const linkIcons = [
         {
@@ -17,6 +18,11 @@ const linkIcons = [
             src: gmailIcon,
             alt: "gmail icon", 
             link: "mailto:dimaang23@gmail.com"
+        },
+        {
+            src: githubIcon,
+            alt: "github icon",
+            link: "https://github.com/BossNumber1"
         }
     ]
 
