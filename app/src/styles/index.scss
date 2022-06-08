@@ -1,10 +1,12 @@
+@import "header.scss";
+@import "main.scss";
+@import "footer.scss";
+
 body {
     margin: 0;
     // -webkit-font-smoothing: antialiased;
     // -moz-osx-font-smoothing: grayscale;
 }
-
-// custom styles
 
 .app {
     display: grid;
@@ -15,36 +17,4 @@ body {
     grid-template-rows: 20% 100% 20%;
     grid-gap: 1em;
     text-align: center;
-}
-
-.header {
-    grid-area: headerArea;
-}
-
-.main {
-    grid-area: mainArea;
-
-    &__row {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        &__row:not(:last-child) {
-            margin-bottom: 1px;
-        }
-    }
-
-    &__column {
-        border: 1px solid red;
-        width: 100px;
-        height: 100px;
-        margin-right: 1px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-.footer {
-    grid-area: footerArea;
 }
