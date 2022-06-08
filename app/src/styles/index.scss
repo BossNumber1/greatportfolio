@@ -1,4 +1,5 @@
 @import "./common/mixins.scss";
+@import "./common/fonts.scss";
 @import "header.scss";
 @import "footer.scss";
 @import "main.scss";
@@ -15,6 +16,6 @@ body {
         "headerArea" 
         "mainArea" 
         "footerArea";
-    grid-template-rows: 20% 100% 20%;
+    grid-template-rows: 20% 75% 20%;
     grid-gap: 1em;
 }

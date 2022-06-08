@@ -1,4 +1,8 @@
 .header {
+    @include centeringFlex;
+    // @include debuggingBorder;
     grid-area: headerArea;
-    text-align: center;
+
+    font-family: 'Charis SIL', serif;
+    font-size: 32px;
 }

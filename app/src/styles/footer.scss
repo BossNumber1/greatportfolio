@@ -1,5 +1,6 @@
 .footer {
     @include centeringFlex;
+    // @include debuggingBorder;
     grid-area: footerArea;
 
     &__linkIcon {
