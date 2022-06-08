@@ -9,7 +9,7 @@
         margin-bottom: 2px;
     }
 
-    &__column, &__emptyColumn {
+    &__column, &__emptyColumn, &__descriptionColumn {
         @include centeringFlex;
 
         width: 100px;
@@ -18,12 +18,22 @@
         border-radius: 10px;
     }
 
-    &__column {
-        border: 1px solid rgb(201, 199, 199);
+    &__column, &__descriptionColumn {
         cursor: pointer;
-        // color: rgb(62, 62, 62);
+        border: 1px solid rgb(201, 199, 199);
+    }
+
+    &__column div, &__descriptionColumn div {
         font-family: 'Charis SIL', serif;
+        text-align: center;
+    }
+
+    &__column {
         font-size: 16px;
+    }
+
+    &__descriptionColumn {
+        font-size: 12px;
     }
 
     &__emptyColumn {
