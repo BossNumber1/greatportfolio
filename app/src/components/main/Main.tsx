@@ -2,7 +2,7 @@ import Row from './Row';
 
 const allCards = [
         {
-            content: ["1я карточка", "", ""]
+            content: ["Бот", "", ""]
         },
         {
             content: ["", "", ""]
