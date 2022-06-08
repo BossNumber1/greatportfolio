@@ -1,12 +1,21 @@
 type PropTypes = {
-    name: string;
+    name?: string;
 }
 
 function Card(props: PropTypes) {
     return (
-        <div className="main__column">
-            {props.name}
-        </div>
+        <>
+            {
+                props.name ? 
+                    <div className="main__column">
+                        {props.name}
+                    </div> 
+                : 
+                    <div className="main__emptyColumn">
+                        
+                    </div>
+            }
+        </>
     );
 }
 

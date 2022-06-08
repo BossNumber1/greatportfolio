@@ -4,8 +4,8 @@ function Row() {
     return (
         <div className="main__row">
             <Card name="1я карточка" />
-            <Card name="2я карточка" />
-            <Card name="3я карточка" />
+            <Card />
+            <Card />
         </div>
     );
 }

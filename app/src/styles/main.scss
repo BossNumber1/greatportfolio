@@ -11,9 +11,22 @@
     &__column {
         @include centeringFlex;
         
+        border: 1px solid green;
+        width: 100px;
+        height: 100px;
+        margin-right: 2px;
+
+        cursor: pointer;
+    }
+
+    &__emptyColumn {
+        @include centeringFlex;
+        
         border: 1px solid red;
         width: 100px;
         height: 100px;
         margin-right: 2px;
+        
+        cursor: pointer;
     }
 }
