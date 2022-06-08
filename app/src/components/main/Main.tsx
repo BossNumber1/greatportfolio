@@ -1,7 +1,6 @@
 import Row from './Row';
 
-function Main() {
-    const allCards = [
+const allCards = [
         {
             content: ["1я карточка", "", ""]
         },
@@ -13,6 +12,7 @@ function Main() {
         }
     ]
 
+function Main() {
     return (
         <div className="main">
             {
