@@ -1,8 +1,19 @@
 .header {
-    @include centeringFlex;
+    padding-top: 20px;
     // @include debuggingBorder;
     grid-area: headerArea;
 
-    font-family: 'Charis SIL', serif;
-    font-size: 32px;
+    &__title {
+        @include centeringFlex;
+
+        font-family: 'Charis SIL', serif;
+        font-size: 32px;
+
+        &_emphasized {
+            color: rgb(201, 199, 199);
+            font-weight: 300;
+            font-size: 12px;
+            padding-left: 158px;
+        }
+    }
 }

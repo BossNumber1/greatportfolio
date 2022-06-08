@@ -1,7 +1,8 @@
 function Header() {
     return (
         <div className="header">
-            Готовые проекты
+            <div className="header__title">Готовые проекты</div>
+            <div className="header__title header__title_emphasized">Устинов Дмитрий, 2022</div>
         </div>
     );
 }
