@@ -1,4 +1,3 @@
-import React from 'react';
 import vkIcon from '../../pictures/vkIcon.svg'
 import tgIcon from '../../pictures/tgIcon.svg'
 import gmailIcon from '../../pictures/gmailIcon.svg'
