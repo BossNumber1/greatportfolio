@@ -1,13 +1,18 @@
 import { useState } from "react";
+import DefaultCard from "./DefaultCard";
+import DescriptionCard from "./DescriptionCard";
+import EmptyCard from "./EmptyCard";
 
 type PropTypes = {
     name?: string;
+    description?: string;
 }
 
 function Card(props: PropTypes) {
     // карточка перевёрнута?
     const [upsideDown, setUpsideDown] = useState(false);
 
+    // перевернуть карточку
     const turnOver = () => {
         setUpsideDown(!upsideDown);
     }
@@ -16,20 +21,10 @@ function Card(props: PropTypes) {
         <>
             {
                 props.name ? 
-                    upsideDown ? 
-                        <div className="main__descriptionColumn" onClick={turnOver} >
-                            <div>
-                                {"Находит сочетание цветов"}
-                                <br />
-                                <a href="https://vk.com/">Перейти</a>
-                            </div>
-                        </div> : <div className="main__column" onClick={turnOver} >
-                            <div>{props.name}</div>
-                        </div>
-                : 
-                    <div className="main__emptyColumn">
-                        
-                    </div>
+                    upsideDown 
+                        ? <DescriptionCard turnOver={turnOver} description={props.description} /> 
+                        : <DefaultCard turnOver={turnOver} name={props.name} />
+                : <EmptyCard />
             }
         </>
     );

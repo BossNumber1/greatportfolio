@@ -1,14 +1,17 @@
 import Row from './Row';
 
-const allCards = [
+const dataCards = [
         {
-            content: ["Бот", "", ""]
+            namesCards: ["Бот", "", ""],
+            descriptionsCards: ["Находит сочетание цветов", "", ""]
         },
         {
-            content: ["", "", ""]
+            namesCards: ["", "", ""], 
+            descriptionsCards: ["", "", ""]
         },
         {
-            content: ["", "", ""]
+            namesCards: ["", "", ""], 
+            descriptionsCards: ["", "", ""]
         }
     ]
 
@@ -16,9 +19,9 @@ function Main() {
     return (
         <div className="main">
             {
-                allCards.map((row, index) => {
+                dataCards.map((dataRow, index) => {
                     return (
-                        <Row key={index} content={row.content} />
+                        <Row key={index} namesCards={dataRow.namesCards} descriptionsCards={dataRow.descriptionsCards} />
                     )
                 })
             }
