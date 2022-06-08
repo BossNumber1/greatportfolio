@@ -1,3 +1,9 @@
 .footer {
+    @include centeringFlex;
     grid-area: footerArea;
+
+    &__linkIcon {
+        margin-right: 40px;
+        cursor: pointer;
+    }
 }

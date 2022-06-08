@@ -2,9 +2,7 @@
     grid-area: mainArea;
 
     &__row {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include centeringFlex;
 
         &__row:not(:last-child) {
             margin-bottom: 1px;
@@ -12,12 +10,11 @@
     }
 
     &__column {
+        @include centeringFlex;
+        
         border: 1px solid red;
         width: 100px;
         height: 100px;
         margin-right: 1px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 }
