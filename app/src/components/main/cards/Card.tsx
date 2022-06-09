@@ -23,8 +23,17 @@ function Card(props: PropTypes) {
             {
                 props.name ? 
                     upsideDown 
-                        ? <DescriptionCard turnOver={turnOver} description={props.description} link={props.link} /> 
-                        : <DefaultCard turnOver={turnOver} name={props.name} />
+                        ? 
+                            <DescriptionCard 
+                                turnOver={turnOver} 
+                                description={props.description} 
+                                link={props.link} 
+                            /> 
+                        : 
+                            <DefaultCard 
+                                turnOver={turnOver} 
+                                name={props.name} 
+                            />
                 : <EmptyCard />
             }
         </>
